@@ -44,7 +44,7 @@ void * firstList(List * list) {
     Node n = list->head;
     return (n);
   }
-  */
+  */return NULL;
 }
 
 void * nextList(List * list) {
