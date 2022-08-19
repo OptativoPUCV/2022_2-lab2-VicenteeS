@@ -299,3 +299,20 @@ Fri 19 Aug 2022 01:28:42 PM UTC:
  tests:  2|4
 total_score: 20/70
 f291523
+Fri 19 Aug 2022 01:29:56 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:44:14: error: invalid initializer
+   44 |     Node n = list->head;
+      |              ^~~~
+list.c:45:12: error: incompatible types when returning type ‘Node’ but ‘void *’ was expected
+   45 |     return (n);
+      |            ^
+list.c:48:1: error: control reaches end of non-void function [-Werror=return-type]
+   48 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+984f330
