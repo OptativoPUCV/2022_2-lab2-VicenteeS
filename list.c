@@ -39,12 +39,12 @@ List * createList() {
 
 void * firstList(List * list) {
   
-  else
+  /*
   {
     Node n = list->head;
     return (n);
   }
-  
+  */
 }
 
 void * nextList(List * list) {
