@@ -41,7 +41,7 @@ void * firstList(List * list) {
   if(list == NULL) return NULL;
   else
   {
-    Node n = list->head;
+    Node n = *list->head;
     return (n);
   }
   

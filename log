@@ -167,3 +167,17 @@ list.c:48:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 9e4881f
+Fri 19 Aug 2022 01:13:30 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:45:12: error: incompatible types when returning type ‘Node’ but ‘void *’ was expected
+   45 |     return (n);
+      |            ^
+list.c:48:1: error: control reaches end of non-void function [-Werror=return-type]
+   48 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1ce0e73
