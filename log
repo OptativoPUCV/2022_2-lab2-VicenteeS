@@ -2,3 +2,24 @@ Fri 19 Aug 2022 12:44:34 PM UTC:
  tests:  0|6
 total_score: 0/70
 40daa90
+Fri 19 Aug 2022 01:00:43 PM UTC: 
+ list.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:4: error: ‘List’ {aka ‘struct List’} has no member named ‘size’
+   34 |   l->size = 0;
+      |    ^~
+list.c: In function ‘pushFront’:
+list.c:58:19: error: implicit declaration of function ‘createnode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   58 |   Node *newNode = createnode(data);
+      |                   ^~~~~~~~~~
+      |                   createNode
+list.c:58:19: error: initialization of ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+list.c:60:6: error: ‘l’ undeclared (first use in this function)
+   60 |   if(l->head != NULL)
+      |      ^
+list.c:60:6: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+a618f87
