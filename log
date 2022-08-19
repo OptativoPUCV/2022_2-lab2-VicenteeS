@@ -218,3 +218,27 @@ list.c:48:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 f9e492a
+Fri 19 Aug 2022 01:25:21 PM UTC: 
+ list.c | 14 ++++++++++----
+ 1 file changed, 10 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:3: error: ‘else’ without a previous ‘if’
+   42 |   else
+      |   ^~~~
+list.c:44:14: error: invalid initializer
+   44 |     Node n = list->head;
+      |              ^~~~
+list.c:45:12: error: incompatible types when returning type ‘Node’ but ‘void *’ was expected
+   45 |     return (n);
+      |            ^
+list.c:48:1: error: control reaches end of non-void function [-Werror=return-type]
+   48 | }
+      | ^
+list.c: In function ‘popCurrent’:
+list.c:114:1: error: control reaches end of non-void function [-Werror=return-type]
+  114 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a7c5354
