@@ -44,3 +44,13 @@ list.c:60:6: note: each undeclared identifier is reported only once for each fun
 cc1: all warnings being treated as errors
 Compilation failed
 76c88d5
+Fri 19 Aug 2022 01:03:30 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:4: error: ‘List’ {aka ‘struct List’} has no member named ‘size’
+   34 |   l->size = 0;
+      |    ^~
+Compilation failed
+b998938
