@@ -41,7 +41,7 @@ void * firstList(List * list) {
   if(list == NULL) return NULL;
   else
   {
-    Node n = *list->head;
+    Node n = list->head;
     return (n);
   }
   
@@ -83,7 +83,13 @@ void pushBack(List * list, void * data) {
     pushCurrent(list,data);
 }
 
-void pushCurrent(List * list, void * data) {
+void pushCurrent(List * list, void * data) 
+{
+  Node *current = list->current;
+  current->prev->next = current->next;
+  current->next->prev = current->prev;
+
+  free(current);
 }
 
 void * popFront(List * list) {
