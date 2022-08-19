@@ -60,3 +60,26 @@ Fri 19 Aug 2022 01:03:51 PM UTC:
  tests:  1|5
 total_score: 10/70
 aa34362
+Fri 19 Aug 2022 01:04:04 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:59:6: error: ‘l’ undeclared (first use in this function)
+   59 |   if(l == NULL) return NULL;
+      |      ^
+list.c:59:6: note: each undeclared identifier is reported only once for each function it appears in
+list.c:59:24: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   59 |   if(l == NULL) return NULL;
+      |                        ^~~~
+list.c:57:6: note: declared here
+   57 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+list.c:60:19: error: implicit declaration of function ‘createnode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   60 |   Node *newNode = createnode(data);
+      |                   ^~~~~~~~~~
+      |                   createNode
+list.c:60:19: error: initialization of ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+cc1: all warnings being treated as errors
+Compilation failed
+3c1c654
