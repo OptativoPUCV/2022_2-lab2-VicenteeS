@@ -38,6 +38,7 @@ List * createList() {
 }
 
 void * firstList(List * list) {
+  if(list == NULL) return NULL;
   Node *n = list->head;
     return (n);
 }
