@@ -102,3 +102,17 @@ list.c:59:19: error: initialization of ‘Node *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 1bed61d
+Fri 19 Aug 2022 01:05:15 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:58:27: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   58 |   if(list == NULL) return NULL;
+      |                           ^~~~
+list.c:57:6: note: declared here
+   57 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4074b91
