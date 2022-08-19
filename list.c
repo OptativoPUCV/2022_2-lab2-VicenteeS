@@ -39,8 +39,12 @@ List * createList() {
 
 void * firstList(List * list) {
   if(list == NULL) return NULL;
-  Node *n = list->head;
+  else
+  {
+    Node *n = list->head->data;
     return (n);
+  }
+  
 }
 
 void * nextList(List * list) {
