@@ -34,12 +34,12 @@ List * createList() {
   //l->size = 0;
   l->current = NULL;
 
-  
      return (l);
 }
 
 void * firstList(List * list) {
-    return NULL;
+  Node *n = list->head;
+    return (n);
 }
 
 void * nextList(List * list) {
