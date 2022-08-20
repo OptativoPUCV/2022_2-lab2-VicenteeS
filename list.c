@@ -42,8 +42,8 @@ void * firstList(List * list)
   Node *nodo = list->head;
   if(list->head != NULL)
   {
-    int *i = nodo->data;
-    return (i);
+    int *primero = nodo->data;
+    return (primero);
   }
   else
   {
@@ -52,8 +52,10 @@ void * firstList(List * list)
 
 }
 
-void * nextList(List * list) {
-    return NULL;
+void * nextList(List * list) 
+{
+  
+  return NULL;
 }
 
 void * lastList(List * list) {
