@@ -428,3 +428,14 @@ Sat 20 Aug 2022 02:58:34 AM UTC:
  tests:  3|4
 total_score: 25/70
 f36235f
+Sat 20 Aug 2022 03:01:58 AM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:58:9: error: unused variable ‘nodo’ [-Werror=unused-variable]
+   58 |   Node *nodo = list->head;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+af72804
