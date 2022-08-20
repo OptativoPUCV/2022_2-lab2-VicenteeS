@@ -56,19 +56,27 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-  Node *nodo = list->current->next;
+  if(list->current != NULL)
+    {
+      Node *nodo = list->current->next;
 
-  list->current = nodo;
-  
-  if(nodo != NULL)
-  {
-    int *primero = nodo->data;
-    return (primero);
+    list->current = nodo;
+
+    if(nodo != NULL)
+    {
+      int *primero = nodo->data;
+      return (primero);
+    }  
+    else
+    {
+      return(NULL);
+    }
   }
   else
   {
-    return(NULL);
+    return (NULL);
   }
+  
 }
 
 void * lastList(List * list) {
