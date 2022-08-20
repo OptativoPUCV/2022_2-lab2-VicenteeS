@@ -714,3 +714,19 @@ list.c:116:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 21d9adb
+Sat 20 Aug 2022 03:32:00 AM UTC: 
+ list.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:99:23: error: ‘lNULL’ undeclared (first use in this function); did you mean ‘NULL’?
+   99 |   if(list->current != lNULL)
+      |                       ^~~~~
+      |                       NULL
+list.c:99:23: note: each undeclared identifier is reported only once for each function it appears in
+list.c:117:1: error: control reaches end of non-void function [-Werror=return-type]
+  117 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+607e2bc

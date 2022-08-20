@@ -95,11 +95,12 @@ void * lastList(List * list)
 
 void * prevList(List * list) 
 {
-  if(list->current != list->head)
+  Node *nodo;
+  if(list->current != lNULL)
   {
-    if(list->current != NULL)
+    if(list->current != list->head)
     {
-      Node *nodo = list->current->prev;
+      nodo = list->current->prev;
     }
     list->current = nodo;
     if(nodo != NULL)
