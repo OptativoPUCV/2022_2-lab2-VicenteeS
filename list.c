@@ -102,11 +102,10 @@ void * prevList(List * list)
     {
       nodo = list->current->prev;
       list->current = nodo;
-      if(nodo != NULL)
-      {
-        int *anterior = nodo->data;
-       return (anterior);
-      }
+      
+      int *anterior = nodo->data;
+      return (anterior);
+      
     }
   }
   else
