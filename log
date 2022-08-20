@@ -322,3 +322,21 @@ Fri 19 Aug 2022 01:30:08 PM UTC:
  tests:  2|4
 total_score: 20/70
 c5b0159
+Sat 20 Aug 2022 02:44:04 AM UTC: 
+ list.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:13: error: ‘n’ undeclared (first use in this function)
+   42 |     return (n);
+      |             ^
+list.c:42:13: note: each undeclared identifier is reported only once for each function it appears in
+list.c:41:11: error: unused variable ‘nodo’ [-Werror=unused-variable]
+   41 |     void *nodo = list->head;
+      |           ^~~~
+list.c:45:1: error: control reaches end of non-void function [-Werror=return-type]
+   45 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1397840
