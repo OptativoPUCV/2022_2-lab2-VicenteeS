@@ -375,3 +375,14 @@ Sat 20 Aug 2022 02:50:30 AM UTC:
  tests:  2|4
 total_score: 20/70
 667df0f
+Sat 20 Aug 2022 02:52:50 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:44:11: error: function returns address of local variable [-Werror=return-local-addr]
+   44 |   return (&nodo);
+      |          ~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1fe94bc
