@@ -766,3 +766,14 @@ list.c:116:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 0b324aa
+Sat 20 Aug 2022 03:36:29 AM UTC: 
+ list.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:115:1: error: control reaches end of non-void function [-Werror=return-type]
+  115 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5faf751
