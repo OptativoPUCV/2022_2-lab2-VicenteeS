@@ -58,9 +58,8 @@ void * nextList(List * list)
   if(list->current != NULL)
     {
       Node *nodo = list->current->next;
+      list->current = nodo;
     }
-    list->current = nodo;
-
     if(nodo != NULL)
     {
       int *siguiente = nodo->data;

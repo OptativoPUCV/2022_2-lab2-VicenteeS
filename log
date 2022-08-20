@@ -638,3 +638,37 @@ list.c:116:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 ba521d8
+Sat 20 Aug 2022 03:29:20 AM UTC: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:63:8: error: ‘nodo’ undeclared (first use in this function)
+   63 |     if(nodo != NULL)
+      |        ^~~~
+list.c:63:8: note: each undeclared identifier is reported only once for each function it appears in
+list.c: At top level:
+list.c:73:3: error: expected identifier or ‘(’ before ‘else’
+   73 |   else
+      |   ^~~~
+list.c:77:1: error: expected identifier or ‘(’ before ‘}’ token
+   77 | }
+      | ^
+list.c: In function ‘prevList’:
+list.c:101:13: error: unused variable ‘nodo’ [-Werror=unused-variable]
+  101 |       Node *nodo = list->current->prev;
+      |             ^~~~
+list.c:103:21: error: ‘nodo’ undeclared (first use in this function)
+  103 |     list->current = nodo;
+      |                     ^~~~
+list.c: In function ‘nextList’:
+list.c:72:3: error: control reaches end of non-void function [-Werror=return-type]
+   72 |   }
+      |   ^
+list.c: In function ‘prevList’:
+list.c:115:1: error: control reaches end of non-void function [-Werror=return-type]
+  115 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a55a64e
