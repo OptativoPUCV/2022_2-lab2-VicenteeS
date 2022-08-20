@@ -386,3 +386,9 @@ list.c:44:11: error: function returns address of local variable [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 1fe94bc
+Sat 20 Aug 2022 02:53:44 AM UTC: 
+ list.c | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+ tests:  2|4
+total_score: 20/70
+f616018

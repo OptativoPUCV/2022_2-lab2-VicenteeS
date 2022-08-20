@@ -40,9 +40,14 @@ List * createList() {
 void * firstList(List * list) 
 { 
   Node *nodo = list->head;
-  
-  return (&nodo);
-  
+  if(list->head != NULL)
+  {
+    return (nodo);
+  }
+  else
+  {
+    return(NULL);
+  }
 
 }
 
