@@ -101,12 +101,12 @@ void * prevList(List * list)
     if(list->current != list->head)
     {
       nodo = list->current->prev;
-    }
-    list->current = nodo;
-    if(nodo != NULL)
-    {
-      int *anterior = nodo->data;
-      return (anterior);
+      list->current = nodo;
+      if(nodo != NULL)
+      {
+        int *anterior = nodo->data;
+       return (anterior);
+      }
     }
   }
   else
