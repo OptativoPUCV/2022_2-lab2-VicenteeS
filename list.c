@@ -101,15 +101,18 @@ void * prevList(List * list)
     {
       Node *nodo = list->current->prev;
     }
-    
-      list->current = nodo;
-      if(nodo != NULL)
-      {
-        int *anterior = nodo->data;
-        return (anterior);
-      }
+    list->current = nodo;
+    if(nodo != NULL)
+    {
+      int *anterior = nodo->data;
+      return (anterior);
+    }
   }
-  return NULL;
+  else
+  {
+    return NULL;
+  }
+  
 }
 
 void pushFront(List * list, void * data) {
