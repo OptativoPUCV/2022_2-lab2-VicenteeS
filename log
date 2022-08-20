@@ -406,3 +406,13 @@ list.c:46:12: error: returning ‘int’ from a function with return type ‘voi
 cc1: all warnings being treated as errors
 Compilation failed
 85c0f87
+Sat 20 Aug 2022 02:55:50 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:45:18: error: ‘Node’ has no member named ‘head’
+   45 |     int *i = nodo->head;
+      |                  ^~
+Compilation failed
+9cda06d
