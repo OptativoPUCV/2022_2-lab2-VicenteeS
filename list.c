@@ -58,7 +58,7 @@ void * nextList(List * list)
   if(list->current != NULL)
     {
       Node *nodo = list->current->next;
-
+    }
     list->current = nodo;
 
     if(nodo != NULL)
@@ -93,8 +93,22 @@ void * lastList(List * list)
   }
 }
 
-void * prevList(List * list) {
-    return NULL;
+void * prevList(List * list) 
+{
+  if(list->current != list->head)
+  {
+    if(list->current->prev != NULL)
+    {
+      Node *nodo = list->current->prev;
+      {
+        list->current = nodo;
+        
+        int *anterior = nodo->data;
+        return (anterior);
+      }
+    }
+  }
+  return NULL;
 }
 
 void pushFront(List * list, void * data) {
