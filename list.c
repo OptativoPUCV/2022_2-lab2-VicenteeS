@@ -106,12 +106,15 @@ void * prevList(List * list)
       int *anterior = nodo->data;
       return (anterior);  
     }
+    else
+    {
+      return(NULL);
+    }
   }
   else
   {
     return NULL;
-  }
-  
+  } 
 }
 
 void pushFront(List * list, void * data) {
