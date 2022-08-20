@@ -456,3 +456,14 @@ Sat 20 Aug 2022 03:04:06 AM UTC:
  tests:  3|4
 total_score: 25/70
 a28a372
+Sat 20 Aug 2022 03:05:42 AM UTC: 
+ list.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:65:20: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Werror=incompatible-pointer-types]
+   65 |     int *primero = list->current;
+      |                    ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+36a5007

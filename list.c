@@ -56,10 +56,13 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-  Node *nodo = list->current->next;
+  Node *nodo = list->current;
+
+  list->current = nodo->next;
+  
   if(nodo != NULL)
   {
-    int *primero = nodo->data;
+    int *primero = list->current;
     return (primero);
   }
   else
