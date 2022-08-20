@@ -96,7 +96,7 @@ void * lastList(List * list)
 void * prevList(List * list) 
 {
   Node *nodo;
-  if(list->current != lNULL)
+  if(list->current != NULL)
   {
     if(list->current != list->head)
     {
