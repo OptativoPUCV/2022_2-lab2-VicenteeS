@@ -392,3 +392,17 @@ Sat 20 Aug 2022 02:53:44 AM UTC:
  tests:  2|4
 total_score: 20/70
 f616018
+Sat 20 Aug 2022 02:55:37 AM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:45:17: error: ‘Node’ has no member named ‘head’
+   45 |     int i = nodo->head;
+      |                 ^~
+list.c:46:12: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   46 |     return (i);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+85c0f87

@@ -42,7 +42,8 @@ void * firstList(List * list)
   Node *nodo = list->head;
   if(list->head != NULL)
   {
-    return (nodo);
+    int i = nodo->head;
+    return (i);
   }
   else
   {
