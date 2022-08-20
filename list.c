@@ -41,7 +41,7 @@ void * firstList(List * list)
 { 
   Node *nodo = list->head;
   
-  return (nodo);
+  return (nodo->data);
   
   //return NULL;
 }
