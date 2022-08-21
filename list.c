@@ -158,7 +158,7 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void  popCurrent(List * list) {
+void * popCurrent(List * list) {
   
   Node *current = list->current;
   
@@ -174,7 +174,7 @@ void  popCurrent(List * list) {
   current->prev->next = current->next;
   current->next->prev = current->prev;
   
-  //return(NULL);
+  return(NULL);
 }
 
 void cleanList(List * list) {
