@@ -160,15 +160,15 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
   
-  Node *current = list->current;
+  Node *nodo = list->current;
   
-  if(current == NULL) return NULL;
+  if(nodo == NULL) return NULL;
   
-  if(list->head == current)
+  if(list->head == nodo)
   {
-      current->next->prev = NULL;
-      list->head = current->next;
-    
+    nodo->next->prev = NULL;
+    list->head = current->next;
+        return(NULL);
   }
   
   current->prev->next = current->next;

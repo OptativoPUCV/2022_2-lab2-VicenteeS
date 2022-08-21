@@ -881,3 +881,15 @@ Sun 21 Aug 2022 12:57:10 AM UTC:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 8e7c123
+Sun 21 Aug 2022 12:59:09 AM UTC: 
+ list.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:170:18: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+  170 |     list->head = current->next;
+      |                  ^~~~~~~
+      |                  popCurrent
+list.c:170:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ace3b79
