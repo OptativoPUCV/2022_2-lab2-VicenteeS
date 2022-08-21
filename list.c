@@ -31,7 +31,6 @@ Node * createNode(void * data) {
 List * createList() {
   List *l = (List *) malloc (sizeof(List));
   l->head = NULL;
-  //l->size = 0;
   l->current = NULL;
 
      return (l);
@@ -117,8 +116,8 @@ void * prevList(List * list)
   } 
 }
 
-void pushFront(List * list, void * data) {
-  //if(list == NULL) return NULL;
+void pushFront(List * list, void * data) 
+{
   Node *newNode = createNode(data);
   
   if(list->head != NULL)
@@ -157,8 +156,6 @@ void pushCurrent(List * list, void * data)
     newNode->next = nextNode;
     nextNode->prev = newNode;
   }
-
-  //free(current);
 }
 
 void * popFront(List * list) {
@@ -170,7 +167,6 @@ void * popBack(List * list) {
     list->current = list->tail;
     return popCurrent(list);
 }
-///*6. Programe la función `void* popCurrent(List * list)`, la cual elimina el nodo que está en la posición del current de la lista enlazada, y además retorna el **dato** del nodo eliminado. **Nota**: El current debe quedar apuntando al nodo siguiente del eliminado
 
 void * popCurrent(List * list) {
   
