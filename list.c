@@ -181,12 +181,13 @@ void * popCurrent(List * list) {
   {
     nodo->next->prev = NULL;
     list->head = nodo->next;
+    free(current);
     return(NULL);
   }
   
   nodo->prev->next = nodo->next;
   nodo->next->prev = nodo->prev;
-  
+  free(current);
   return(NULL);
 }
 

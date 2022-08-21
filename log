@@ -915,3 +915,15 @@ Sun 21 Aug 2022 03:56:54 PM UTC:
  1 file changed, 15 insertions(+)
  tests:  0|0
 a286d68
+Sun 21 Aug 2022 03:57:40 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:184:10: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+  184 |     free(current);
+      |          ^~~~~~~
+      |          popCurrent
+list.c:184:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+1e40348
