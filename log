@@ -893,3 +893,15 @@ list.c:170:18: error: ‘current’ undeclared (first use in this function); did
 list.c:170:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 ace3b79
+Sun 21 Aug 2022 12:59:18 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:174:3: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+  174 |   current->prev->next = current->next;
+      |   ^~~~~~~
+      |   popCurrent
+list.c:174:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2645b39
