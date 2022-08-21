@@ -939,3 +939,8 @@ list.c:186:10: error: ‘current’ undeclared (first use in this function); did
 list.c:186:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b7160a5
+Sun 21 Aug 2022 04:04:12 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+7f94323
