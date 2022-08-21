@@ -188,11 +188,22 @@ void * popCurrent(List * list) {
   }
   else
   {
-    nodo->prev->next = nodo->next;
-    nodo->next->prev = nodo->prev;
-    void * dato = nodo->data;
-    free(nodo);
-    return(dato);
+    if(list->tail == nodo)
+    {
+      nodo->prev->next = NULL;
+      list->tail = nodo->prev;
+      void * dato = nodo->data;
+      free(nodo);
+      return(dato);
+    }
+    else
+    {
+      nodo->prev->next = nodo->next;
+      nodo->next->prev = nodo->prev;
+      void * dato = nodo->data;
+      free(nodo);
+      return(dato);
+    }
   }
 }
 
